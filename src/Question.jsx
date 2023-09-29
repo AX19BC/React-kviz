@@ -14,7 +14,7 @@ export default function Question({ obj, selectedAnswer, onSelectAnswer, isAnswer
                     <button
                         key={index}
                         onClick={() => !isAnswersChecked && onSelectAnswer(answer)}
-                        className={`p-3 text-lg font-bold text-indigo-900 h-[50px] mr-[20px] mt-6 tracking-[0.2em] rounded-lg shadow-md border border-indigo-900 
+                        className={`p-3 text-lg font-bold text-indigo-900 h-auto mr-[20px] mt-6 tracking-[0.2em] rounded-lg shadow-md border border-indigo-900 
                         ${isAnswersChecked ? (answer === correct_answer ? 'bg-green-400' : (answer === selectedAnswer ? 'bg-red-400' : '')) : (answer === selectedAnswer ? 'bg-violet-300' : 'hover:bg-violet-300')}`}
                     >
                         {decode(answer)}

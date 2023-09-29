@@ -68,7 +68,7 @@ export default function kvizScreen() {
         <div className="flex space-x-5 pt-[30px] pb-[50px] items-center space-y-5 ">
             <button 
                 onClick={handleCheckAnswers} 
-                className='text-lg font-bold text-white p-4 h-[60px] tracking-[0.2em] rounded-lg shadow-md bg-gradient-to-br from-blue-900 via-indigo-900 to-blue-700'
+                className='text-lg font-bold text-white p-4 h-auto tracking-[0.2em] rounded-lg shadow-md bg-gradient-to-br from-blue-900 via-indigo-900 to-blue-700'
             >
                 {isAnswersChecked ? 'Try again' : 'Check Answers'}
             </button>
